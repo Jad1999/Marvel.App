@@ -39,6 +39,7 @@ class DetailsViewController: UIViewController{
                         SectionTypes(sectionName: "Stories", sectionObjects: storiesMovies),
                         SectionTypes(sectionName: "Series", sectionObjects: seriesMovies),
                         SectionTypes(sectionName: "Events", sectionObjects: events)]
+         objectsArray.removeAll(where: {$0.sectionObjects.isEmpty})
     }
 }
    //MARK: TableView Methods
